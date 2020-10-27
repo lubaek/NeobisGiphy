@@ -6,6 +6,10 @@ searchForm.addEventListener('submit', e=> {
     const queryString = searchInput.value;
     searchGif(queryString);
 })
+searchForm.addEventListener('reset', e=> {
+    gifs.innerHTML = '';
+    searchInput.value = '';
+})
 
 function searchGif(queryString) {
     const apikey = 'bZmGhDit6ReSZCGtOUwUnKIKkRCJxGcE';
